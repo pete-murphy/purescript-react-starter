@@ -16,7 +16,7 @@ let
   }) { inherit pkgs; };
 
 in pkgs.stdenv.mkDerivation {
-  name = "sandbox";
+  name = "react-basic-starter";
   buildInputs = with pursPkgs; [
     pursPkgs.purs
     pursPkgs.spago
