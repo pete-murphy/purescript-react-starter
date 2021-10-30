@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "spago build",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "parcel html/index.html"
   },
@@ -16,6 +17,7 @@
   },
   "devDependencies": {
     "parcel": "^2.0.0",
-    "purescript": "^0.14.5"
+    "purescript": "^0.14.5",
+    "spago": "^0.20.3"
   }
 }

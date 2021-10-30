@@ -14,12 +14,12 @@ import Web.HTML.Window (document)
 
 main :: Effect Unit
 main = do
-  document' <- window >>= document
-  container <- getElementById "root" (toNonElementParentNode document')
-  case container of
-    Nothing -> throw "Root element not found." 
-    Just c -> do
+  maybeRoot <- window
+    >>= document
+    >>= toNonElementParentNode
+      >>> getElementById "root"
+  case maybeRoot of
+    Nothing -> throw "Root element not found."
+    Just root -> do
       app <- mkApp
-      render (app unit) c
-    
-  
+      render (app unit) root
