@@ -22,5 +22,10 @@ For example, let's add [`affjax`](https://github.com/purescript-contrib/purescri
 
 ```shell
 npx spago install affjax checked-exceptions
+npm run build
 ```
 
+(Note that `affjax` will also require the NPM dependency `xhr2`)
+```shell
+npm install -D xhr2
+```
