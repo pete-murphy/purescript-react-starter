@@ -7,12 +7,12 @@ let
   # nix-prefetch-git https://github.com/justinwoo/easy-purescript-nix
   #
   # Then, copy the resulting rev and sha256 here.
-  # 2021-10-23T15:22:11+03:00
+  # 2022-01-03T21:01:50+02:00
   pursPkgs = import (pkgs.fetchFromGitHub {
     owner = "justinwoo";
     repo = "easy-purescript-nix";
-    rev = "7802db65618c2ead3a55121355816b4c41d276d9";
-    sha256 = "0n99hxxcp9yc8yvx7bx4ac6askinfark7dnps3hzz5v9skrvq15q";
+    rev = "678070816270726e2f428da873fe3f2736201f42";
+    sha256 = "13l9c1sgakpmh9f23201s8d1lnv0zz0q1wsr1lc92wdpkxs9nii4";
   }) { inherit pkgs; };
 
 in pkgs.stdenv.mkDerivation {
