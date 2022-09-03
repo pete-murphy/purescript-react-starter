@@ -6,6 +6,7 @@
   "scripts": {
     "build": "spago build",
     "test": "echo \"Error: no test specified\" && exit 1",
+    "postinstall": "spago install",
     "start": "parcel html/index.html"
   },
   "keywords": [],

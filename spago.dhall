@@ -19,7 +19,6 @@ to generate this file without the comments in this block.
   , "js-timers"
   , "maybe"
   , "prelude"
-  , "psci-support"
   , "react-basic"
   , "react-basic-dom"
   , "react-basic-hooks"
