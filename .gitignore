@@ -2,6 +2,7 @@
 /node_modules/
 /.pulp-cache/
 /output/
+/output-es/
 /generated-docs/
 /.psc-package/
 /.psc*
@@ -11,3 +12,4 @@
 /.cache/
 /dist/
 /.parcel-cache/
+/bundle/

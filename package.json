@@ -4,22 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "spago build",
-    "bundle": "spago build && purs-backend-es bundle-app --no-build",
+    "build:dev": "spago build",
+    "build:prod": "spago build --config=prod.dhall",
+    "bundle": "npm run build:prod && purs-backend-es bundle-app --no-build --to=\"./bundle/Main/index.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "postinstall": "spago install",
+    "postinstall": "spago install && npm run build:dev",
     "start": "parcel html/index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "purs-backend-es": "^1.1.0",
+    "purs-backend-es": "^1.2.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "parcel": "^2.7.0",
+    "esbuild": "^0.15.13",
+    "parcel": "^2.8.0",
     "purescript": "^0.15.4",
     "purs-tidy": "^0.9.2",
     "spago": "^0.20.9"
