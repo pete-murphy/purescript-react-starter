@@ -7,6 +7,7 @@ import Data.Maybe (Maybe(..))
 import Effect (Effect)
 import Effect.Exception as Exception
 import React.Basic.DOM.Client as Client
+import React.Basic.StrictMode as StrictMode
 import Web.DOM.NonElementParentNode as NonElementParentNode
 import Web.HTML as HTML
 import Web.HTML.HTMLDocument as HTMLDocument
@@ -23,4 +24,4 @@ main = do
     Just root -> do
       app <- App.mkApp
       reactRoot <- Client.createRoot root
-      Client.renderRoot reactRoot (app unit)
+      Client.renderRoot reactRoot (StrictMode.strictMode (app unit))
