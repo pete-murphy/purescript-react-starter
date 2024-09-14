@@ -5,7 +5,7 @@
 Install all the dependencies and compile the app with
 
 ```shell
-npm install && npm run build:dev
+npm install
 ```
 
 To run the app
@@ -21,5 +21,5 @@ and open a browser to `localhost:1234`
 Build a production bundle using [`purescript-backend-optimizer`](https://github.com/aristanetworks/purescript-backend-optimizer)
 
 ```shell
-npm run build:prod
+npm run build
 ```
