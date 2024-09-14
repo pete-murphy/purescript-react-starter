@@ -2,19 +2,17 @@
 
 ## Getting started
 
-Install all the dependencies and compile the app with
+Install dependencies and compile the app
 
 ```shell
 npm install
 ```
 
-To run the app
+Run the app
 
 ```shell
 npm run start
 ```
-
-and open a browser to `localhost:1234`
 
 ## Production build
 
