@@ -5,7 +5,8 @@
     "build": "spago build --config=prod.dhall",
     "bundle": "npm run build && purs-backend-es bundle-app --no-build --to=\"./bundle/Main/index.js\"",
     "postinstall": "spago install && spago build",
-    "start": "vite html"
+    "start": "vite html",
+    "test": "spago test"
   },
   "keywords": [],
   "author": "",
