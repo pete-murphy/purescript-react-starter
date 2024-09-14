@@ -15,7 +15,6 @@ to generate this file without the comments in this block.
   [ "console"
   , "effect"
   , "exceptions"
-  , "foldable-traversable"
   , "js-timers"
   , "maybe"
   , "prelude"
